@@ -1,8 +1,8 @@
 class CreateDepartments < ActiveRecord::Migration[6.1]
   def change
     create_table :departments do |t|
-      t.text :name
-
+      t.string :name
+      t.bigint :company_id
       t.timestamps
     end
   end
